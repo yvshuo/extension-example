@@ -8,10 +8,10 @@ function apply(hook) {
   hook('onStart', function(ctx) {
     return new Promise(resolve => {
       setTimeout(_ => {
-        console.log('plugin-1 onCreate');
+        console.log('plugin-1 onStart');
         console.log(ctx);
         resolve();
-      }, 2000);
+      }, 3000);
     });
   });
 }
